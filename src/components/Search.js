@@ -32,10 +32,7 @@ export const Search = () => {
                 }));
                 return mapped;
             })
-            .then(function (mapped) {
-                console.log("setting result state");
-                setBGGSearchResult(mapped);
-            })
+            .then((mapped) => setBGGSearchResult(mapped))
             .catch(err => console.log(err));
     }
         
